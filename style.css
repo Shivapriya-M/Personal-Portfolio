@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #081b29;
+    color: white;
+}
+
+header {
+    background: #05131e;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00eeff;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00eeff;
+}
+
+.home {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 8%;
+    gap: 30px;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content h1 {
+    color: #00eeff;
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.home-content h2 {
+    font-size: 23px;
+}
+
+.home-content p {
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background: #00eeff;
+    color: #081b29;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.profile img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00eeff;
+}
+
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.heading span {
+    color: #00eeff;
+}
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill {
+    background: #112e42;
+    padding: 20px 30px;
+    border: 1px solid #00eeff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #00eeff;
+    color: #081b29;
+    transform: translateY(-5px);
+}
+
+.project-box {
+    background: #112e42;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 750px;
+    border-radius: 12px;
+    border-left: 4px solid #00eeff;
+}
+
+.project-box h3 {
+    color: #00eeff;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    line-height: 1.6;
+}
+
+#contact p {
+    margin: 15px;
+}
+
+footer {
+    text-align: center;
+    background: #05131e;
+    padding: 25px;
+    color: #00eeff;
+}
+
+@media(max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .profile img {
+        width: 200px;
+        height: 200px;
+    }
+}
